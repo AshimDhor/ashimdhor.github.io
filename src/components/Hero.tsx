@@ -10,7 +10,6 @@ const Hero = () => {
   const isVisible = useScrollAnimation(sectionRef);
 
   return (
-    // --- MODIFIED SECTION: Animation logic is removed from here ---
     <section
       id="home"
       ref={sectionRef}
@@ -21,10 +20,12 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        {/* The main content container now controls the overall visibility */}
-        <div className={`space-y-6 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        {/* --- THIS LINE IS THE KEY FIX --- */}
+        {/* The animation classes have been removed from this parent div */}
+        <div className="space-y-6">
 
-          {/* --- 1. IMAGE ANIMATION ADDED --- */}
+          {/* Each element below now animates independently based on the 'isVisible' trigger */}
+
           <img
             src="/profile-photo.jpg"
             alt="Ashim Dhor"
@@ -33,7 +34,6 @@ const Hero = () => {
             }`}
           />
 
-          {/* --- 2. H1 ANIMATION ADDED --- */}
           <h1 className={`text-5xl md:text-7xl font-bold text-gray-900 dark:text-gray-100 transition-all duration-700 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
@@ -43,14 +43,14 @@ const Hero = () => {
             Ashim Dhor
           </h1>
 
-          {/* --- 3. H2 ANIMATION CORRECTED --- */}
+          {/* This H2 will now animate correctly */}
           <h2 className={`text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 dark:from-cyan-400 dark:via-cyan-300 dark:to-cyan-200 bg-clip-text text-transparent animate-gradient transition-all duration-700 delay-400 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
             AI Researcher & Engineer
           </h2>
 
-          {/* --- 4. P ANIMATION CORRECTED --- */}
+          {/* This P will now animate correctly */}
           <p className={`text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto transition-all duration-700 delay-600 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
