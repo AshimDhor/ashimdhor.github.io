@@ -37,7 +37,7 @@ const Hero = () => {
             <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 dark:from-cyan-400 dark:via-cyan-300 dark:to-cyan-200 bg-clip-text text-transparent animate-gradient transition-all duration-700 delay-400 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              AI Researcher & Engineer
+              MS Student in Data Science and Engineering
             </h2>
 
             <p className={`text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed transition-all duration-700 delay-600 ${
