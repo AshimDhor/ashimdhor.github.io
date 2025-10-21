@@ -14,8 +14,8 @@ const Publications = () => {
     },
     {
       number: "02",
-      title: "An Uncertainty-Aware Deep Learning Model for Gland Segmentation in Histopathology Images.",
-      authors: "Accepted at IndoML 2025:",
+      title: "An Uncertainty-Aware Deep Learning Model for Prostate Gland Segmentation in Histopathology Images.",
+      authors: "Accepted at IndoML 2025 for Poster Presentation:",
       venue: "The Sixth Indian Symposium on Machine Learning."
     }
  
