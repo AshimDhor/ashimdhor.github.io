@@ -11,13 +11,13 @@ const Publications = () => {
       title: "Financial fraud detection using quantum graph neural networks.",
       authors: "Innan, N., Sawaika, A., Dhor, A., et al.",
       venue: "Quantum Machine Intelligence."
-    },
-    {
+    }
+  <!--  {
       number: "02",
       title: "An Uncertainty-Aware Deep Learning Model for Prostate Gland Segmentation in Histopathology Images.",
       authors: "Accepted at IndoML 2025 for Poster Presentation:",
       venue: "The Sixth Indian Symposium on Machine Learning."
-    }
+    }-->
  
   ];
 
