@@ -12,6 +12,7 @@
   <nav class="top-bar">
     <div class="top-bar-inner">
       <div class="social-icons">
+        <a href="index.html" class="navbar-brand">Ashim Dhor</a>
         <a href="mailto:ashimdhor2003@gmail.com" title="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
         </a>
@@ -56,13 +57,12 @@
         <div class="pub-venue">Medical Imaging with Deep Learning (MIDL) 2026</div>
         <div class="pub-links">
           <button onclick="toggleAbstract(this)">Abstract</button>
-          <a href="https://openreview.net/pdf?id=b40KQjP3Au">Paper</a>
-          <a href="https://github.com/AshimDhor/tune_plus_plus">Code</a>
+          <a href="#">Paper</a>
+          <a href="#">Code</a>
         </div>
         <div class="pub-abstract">
           <!-- UPDATE: Paste your abstract here -->
-          Deep learning models for medical image segmentation lack mechanisms to assess their own reliability, leading to two critical failures: they provide no uncertainty estimates to distinguish confident predictions from error-prone ones, and often produce anatomically implausible segmentations or incorrect connectivity that violate known structural constraints. We observe that uncertainty and topology are intrinsically linked and anatomically complex regions naturally exhibit higher prediction uncertainty, while uncertain predictions require stronger enforcement of structural constraints. Building on this insight, we propose TUNE++, a unified framework that jointly learns segmentation, uncertainty quantification, and topology preservation through a novel Topology-Uncertainty aware Paired Attention (TUPA) mechanism. Our method decomposes uncertainty into aleatoric and epistemic components while simultaneously enforcing anatomical correctness through persistent homology-based constraints. A key innovation is our topology-uncertainty alignment loss that minimizes the discrepancy between predicted total uncertainty and a topological complexity score computed from organ boundaries, multi-organ junction counts, and critical points extracted from persistence diagrams, teaching the model to be uncertain precisely where anatomical structure is geometrically complex. 
-          Our empirical results demonstrate that joint modeling of TUNE++  produced enhanced segmentation accuracy, well-calibrated uncertainty estimates that successfully identify errors, substantial reduction in topological violations, and learned confidence that correlates strongly with anatomical complexity. 
+          We propose TUNE++, a topology-guided framework for uncertainty-aware 3D medical image segmentation. By integrating persistent homology-based topological features with a dual attention mechanism, TUNE++ captures both geometric and topological properties of anatomical structures. Our method estimates voxel-wise uncertainty through a topology-uncertainty-aware paired attention block that jointly models spatial, channel, and topological attention along with an uncertainty module. Extensive experiments on multiple 3D medical imaging benchmarks demonstrate that TUNE++ achieves state-of-the-art segmentation accuracy while providing reliable uncertainty estimates that correlate with actual prediction errors.
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@
         </div>
         <div class="pub-abstract">
           <!-- UPDATE: Paste your abstract here -->
-          Histopathology image segmentation requires not only accurate pixel-wise predictions but also the preservation of topological structures and the quantification of prediction uncertainty for better diagnostics. We present HISTO-UNet, a novel framework that addresses these challenges by integrating topology-preserving constraints with a dual uncertainty quantification system for robust histopathology image segmentation. Our approach employs a multi-task objective, combining medial axis and marker-controlled topology losses with a Bayesian deep learning methodology to simultaneously capture both aleatoric and epistemic uncertainty. Through extensive evaluation on three public datasets, we found HISTO-UNet consistently outperforms standard baselines in both segmentation accuracy and uncertainty calibration. Our experiments validate the contribution of each component, revealing that the integration of topology-awareness and dual uncertainty quantification yields significant improvements in both segmentation performance and model reliability.
+          We present HISTO-UNet, a topology-aware UNet architecture for histopathology image segmentation that integrates dual uncertainty quantification. The model combines persistent homology-based topology loss with both epistemic and aleatoric uncertainty estimation to produce reliable segmentation maps and calibrated uncertainty scores for clinical decision support in digital pathology workflows.
         </div>
       </div>
     </div>
@@ -99,12 +99,11 @@
         <div class="pub-venue">AAAI 2026 &mdash; Student Abstract Track</div>
         <div class="pub-links">
           <button onclick="toggleAbstract(this)">Abstract</button>
-          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/42210">Paper</a>
-          <a href="https://github.com/AshimDhor/Topo-GraT">Code</a>
+          <a href="#">Paper</a>
         </div>
         <div class="pub-abstract">
           <!-- UPDATE: Paste your abstract here -->
-          Automated cancer segmentation in Whole Slide Images (WSIs) has been dominated by a paradigm of static pattern recognition, where even advanced methods leveraging Transformers, Multiple Instance Learning, or topology-aware losses remain fundamentally descriptive and correlational. To address this limitation, we reframe WSI segmentation from a descriptive task to one of causal process modeling. We introduce Topo-GraT, a novel framework featuring a Causal Growth Field (CGF) to model tumor invasion dynamics and a Causal Flow Attention (CFA) mechanism that embeds this field as an architectural prior. This causal engine is integrated within an iterative graph refinement loop that uses segmentation uncertainty to dynamically focus computational resources on the most ambiguous tissue regions. Our comprehensive experiments on multiple WSI datasets demonstrate that Topo-GraT establishes a new state-of-the-art, significantly outperforming existing methods and reducing the 95\% Hausdorff Distance, a key boundary metric, by over 15\%. Crucially, our framework yields the CGF as a rich, interpretable output whose structure correlates with tumor aggressiveness, positioning it as a novel biomarker for downstream prognostic tasks. By shifting the paradigm from static recognition to causal reasoning, Topo-GraT offers a more robust, efficient, and clinically insightful approach, setting a new direction for the causally-aware medical image analysis.
+          We introduce Topo-GraT, a causal graph transformer framework that leverages topological data analysis for learning structural growth patterns. The model discovers and exploits causal relationships in graph-structured data, enabling interpretable and robust predictions for dynamic graph evolution tasks.
         </div>
       </div>
     </div>
@@ -120,7 +119,7 @@
         <div class="pub-venue">AAAI 2026 &mdash; Empowering Global South AI Community Activity</div>
         <div class="pub-links">
           <button onclick="toggleAbstract(this)">Abstract</button>
-          <!-- <a href="#">Paper</a> -->
+          <a href="#">Paper</a>
         </div>
         <div class="pub-abstract">
           <!-- UPDATE: Paste your abstract here -->
@@ -143,11 +142,12 @@
         <div class="pub-venue">Quantum Machine Intelligence, 2024</div>
         <div class="pub-links">
           <button onclick="toggleAbstract(this)">Abstract</button>
-          <a href="https://link.springer.com/article/10.1007/s42484-024-00143-6">Paper</a>
+          <a href="#">Paper</a>
         </div>
         <div class="pub-abstract">
           <!-- UPDATE: Paste your abstract here -->
-          Financial fraud detection is essential for preventing significant financial losses and maintaining the reputation of financial institutions. However, conventional methods of detecting financial fraud have limited effectiveness, necessitating the need for new approaches to improve detection rates. In this paper, we propose a novel approach for detecting financial fraud using Quantum Graph Neural Networks (QGNNs). QGNNs are a type of neural network that can process graph-structured data and leverage the power of Quantum Computing (QC) to perform computations more efficiently than classical neural networks. Our approach uses Variational Quantum Circuits (VQC) to enhance the performance of the QGNN. In order to evaluate the efficiency of our proposed method, we compared the performance of QGNNs to Classical Graph Neural Networks using a real-world financial fraud detection dataset. The results of our experiments showed that QGNNs achieved an AUC of 0.85, which outperformed classical GNNs. Our research highlights the potential of QGNNs and suggests that QGNNs are a promising new approach for improving financial fraud detection.        </div>
+          We propose a Quantum Graph Neural Network (QGNN) for financial fraud detection that leverages Topological Data Analysis to process transaction graphs and a Variational Quantum Circuit to enhance feature learning. The proposed QGNN significantly outperforms classical GraphSAGE baselines, achieving 94.5% accuracy and a Precision-Recall AUC of 0.85, demonstrating quantum advantage on the fraud detection task.
+        </div>
       </div>
     </div>
 
