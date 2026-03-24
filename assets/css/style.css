@@ -241,7 +241,7 @@ img { max-width: 100%; display: block; }
 }
 .pub-card {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 170px 1fr;
   gap: 24px;
   padding: 24px 0;
   border-bottom: 1px solid var(--c-border-light);
@@ -249,14 +249,24 @@ img { max-width: 100%; display: block; }
 }
 .pub-card:last-child { border-bottom: none; }
 
-.pub-thumb {
-  width: 160px;
-  height: 110px;
+.pub-thumb-wrap {
+  width: 170px;
+  height: 120px;
   border-radius: 6px;
-  object-fit: cover;
   border: 1px solid var(--c-border-light);
   background: var(--c-bg-alt);
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
 }
 
 .pub-info {}
@@ -266,9 +276,9 @@ img { max-width: 100%; display: block; }
     grid-template-columns: 1fr;
     gap: 12px;
   }
-  .pub-thumb {
+  .pub-thumb-wrap {
     width: 100%;
-    height: 160px;
+    height: 180px;
   }
 }
 
@@ -301,7 +311,9 @@ img { max-width: 100%; display: block; }
   flex-wrap: wrap;
   gap: 8px;
 }
-.pub-links a {
+.pub-links a,
+.pub-links button {
+  font-family: var(--font-sans);
   font-size: 12px;
   font-weight: 600;
   padding: 4px 10px;
@@ -312,11 +324,32 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   letter-spacing: 0.04em;
   transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
 }
-.pub-links a:hover {
+.pub-links a:hover,
+.pub-links button:hover {
   background: var(--c-accent);
   color: #fff;
   border-color: var(--c-accent);
+}
+
+/* Abstract toggle */
+.pub-abstract {
+  display: none;
+  margin-top: 12px;
+  padding: 14px 16px;
+  background: var(--c-bg-alt);
+  border: 1px solid var(--c-border-light);
+  border-radius: 6px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--c-text-secondary);
+  text-align: justify;
+}
+.pub-abstract.open {
+  display: block;
+  animation: fadeUp 0.3s ease both;
 }
 
 /* ===== EXPERIENCE ===== */
