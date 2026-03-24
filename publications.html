@@ -42,71 +42,110 @@
   <main class="container page-content">
     <h1 class="section-title fade-up">Publications</h1>
 
+    <!-- ==================== 2026 ==================== -->
     <h2 class="pub-year fade-up">2026</h2>
 
-    <!-- INSTRUCTIONS: Replace each src="assets/img/pub_xxx.png" with your actual paper figure.
-         Recommended: ~320x220px, PNG or JPG. Save images in assets/img/ folder. -->
-
+    <!-- TUNE++ -->
     <div class="pub-card fade-up">
-      <img class="pub-thumb" src="assets/img/pub_tunepp.png" alt="TUNE++">
+      <div class="pub-thumb-wrap">
+        <img src="assets/img/pub_tunepp.png" alt="TUNE++">
+      </div>
       <div class="pub-info">
         <div class="pub-title">TUNE++: Topology-Guided Uncertainty Estimation for Reliable 3D Medical Image Segmentation</div>
         <div class="pub-authors"><span class="me">Ashim Dhor</span>, Abhirup Banerjee, Tanmay Basu</div>
         <div class="pub-venue">Medical Imaging with Deep Learning (MIDL) 2026</div>
         <div class="pub-links">
+          <button onclick="toggleAbstract(this)">Abstract</button>
           <a href="#">Paper</a>
           <a href="#">Code</a>
+        </div>
+        <div class="pub-abstract">
+          <!-- UPDATE: Paste your abstract here -->
+          We propose TUNE++, a topology-guided framework for uncertainty-aware 3D medical image segmentation. By integrating persistent homology-based topological features with a dual attention mechanism, TUNE++ captures both geometric and topological properties of anatomical structures. Our method estimates voxel-wise uncertainty through a topology-uncertainty-aware paired attention block that jointly models spatial, channel, and topological attention along with an uncertainty module. Extensive experiments on multiple 3D medical imaging benchmarks demonstrate that TUNE++ achieves state-of-the-art segmentation accuracy while providing reliable uncertainty estimates that correlate with actual prediction errors.
         </div>
       </div>
     </div>
 
+    <!-- HISTO-UNet -->
     <div class="pub-card fade-up">
-      <img class="pub-thumb" src="assets/img/pub_histounet.png" alt="HISTO-UNet">
+      <div class="pub-thumb-wrap">
+        <img src="assets/img/pub_histounet.png" alt="HISTO-UNet">
+      </div>
       <div class="pub-info">
         <div class="pub-title">HISTO-UNet: Histopathology Image Segmentation Using Topology-Aware UNet with Dual Uncertainty Quantification</div>
         <div class="pub-authors"><span class="me">Ashim Dhor</span>, Emily Das, Rasel Mondal, Sweta Azad, Vaishali Walke, Shakti Kumar Yadav, Abhirup Banerjee, Tanmay Basu</div>
         <div class="pub-venue">IEEE International Symposium on Biomedical Imaging (ISBI) 2026</div>
         <div class="pub-links">
+          <button onclick="toggleAbstract(this)">Abstract</button>
           <a href="#">Paper</a>
           <a href="#">Code</a>
+        </div>
+        <div class="pub-abstract">
+          <!-- UPDATE: Paste your abstract here -->
+          We present HISTO-UNet, a topology-aware UNet architecture for histopathology image segmentation that integrates dual uncertainty quantification. The model combines persistent homology-based topology loss with both epistemic and aleatoric uncertainty estimation to produce reliable segmentation maps and calibrated uncertainty scores for clinical decision support in digital pathology workflows.
         </div>
       </div>
     </div>
 
+    <!-- Topo-GraT -->
     <div class="pub-card fade-up">
-      <img class="pub-thumb" src="assets/img/pub_topograt.png" alt="Topo-GraT">
+      <div class="pub-thumb-wrap">
+        <img src="assets/img/pub_topograt.png" alt="Topo-GraT">
+      </div>
       <div class="pub-info">
         <div class="pub-title">Topo-GraT: Learning to Grow with Causal Graph Transformers</div>
         <div class="pub-authors"><span class="me">Ashim Dhor</span>, Smily Bharadwaj</div>
         <div class="pub-venue">AAAI 2026 &mdash; Student Abstract Track</div>
         <div class="pub-links">
+          <button onclick="toggleAbstract(this)">Abstract</button>
           <a href="#">Paper</a>
+        </div>
+        <div class="pub-abstract">
+          <!-- UPDATE: Paste your abstract here -->
+          We introduce Topo-GraT, a causal graph transformer framework that leverages topological data analysis for learning structural growth patterns. The model discovers and exploits causal relationships in graph-structured data, enabling interpretable and robust predictions for dynamic graph evolution tasks.
         </div>
       </div>
     </div>
 
+    <!-- Gland Segmentation -->
     <div class="pub-card fade-up">
-      <img class="pub-thumb" src="assets/img/pub_gland.png" alt="Gland Segmentation">
+      <div class="pub-thumb-wrap">
+        <img src="assets/img/pub_gland.png" alt="Gland Segmentation">
+      </div>
       <div class="pub-info">
         <div class="pub-title">An Uncertainty-Aware Deep Learning Model for Gland Segmentation in Prostate Histopathology Images</div>
         <div class="pub-authors"><span class="me">Ashim Dhor</span>, Emily Das</div>
         <div class="pub-venue">AAAI 2026 &mdash; Empowering Global South AI Community Activity</div>
         <div class="pub-links">
+          <button onclick="toggleAbstract(this)">Abstract</button>
           <a href="#">Paper</a>
+        </div>
+        <div class="pub-abstract">
+          <!-- UPDATE: Paste your abstract here -->
+          We present an uncertainty-aware deep learning framework for automated gland segmentation in prostate histopathology images. The model combines epistemic uncertainty via Monte Carlo Dropout with a novel aleatoric uncertainty approach that injects Gaussian noise into model logits, enabling clinicians to identify regions where the model's predictions may be unreliable.
         </div>
       </div>
     </div>
 
+    <!-- ==================== 2024 ==================== -->
     <h2 class="pub-year fade-up">2024</h2>
 
+    <!-- QGNN -->
     <div class="pub-card fade-up">
-      <img class="pub-thumb" src="assets/img/pub_qgnn.png" alt="QGNN Fraud Detection">
+      <div class="pub-thumb-wrap">
+        <img src="assets/img/pub_qgnn.png" alt="QGNN Fraud Detection">
+      </div>
       <div class="pub-info">
         <div class="pub-title">Financial Fraud Detection Using Quantum Graph Neural Networks</div>
         <div class="pub-authors">N. Innan, A. Sawaika, <span class="me">A. Dhor</span>, S. Dutta, S. Thota, H. Gokal, N. Patel, M. A. Khan, I. Theodonis, M. Bennai</div>
         <div class="pub-venue">Quantum Machine Intelligence, 2024</div>
         <div class="pub-links">
+          <button onclick="toggleAbstract(this)">Abstract</button>
           <a href="#">Paper</a>
+        </div>
+        <div class="pub-abstract">
+          <!-- UPDATE: Paste your abstract here -->
+          We propose a Quantum Graph Neural Network (QGNN) for financial fraud detection that leverages Topological Data Analysis to process transaction graphs and a Variational Quantum Circuit to enhance feature learning. The proposed QGNN significantly outperforms classical GraphSAGE baselines, achieving 94.5% accuracy and a Precision-Recall AUC of 0.85, demonstrating quantum advantage on the fraud detection task.
         </div>
       </div>
     </div>
@@ -118,6 +157,14 @@
       &copy; 2026 Ashim Dhor. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
     </div>
   </footer>
+
+  <script>
+    function toggleAbstract(btn) {
+      const abstractDiv = btn.closest('.pub-info').querySelector('.pub-abstract');
+      abstractDiv.classList.toggle('open');
+      btn.textContent = abstractDiv.classList.contains('open') ? 'Close' : 'Abstract';
+    }
+  </script>
 
 </body>
 </html>
