@@ -46,7 +46,7 @@ img { max-width: 100%; display: block; }
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--c-border-light);
+  border-bottom: 1px solid #eee;
 }
 
 .top-bar-inner {
@@ -130,7 +130,7 @@ img { max-width: 100%; display: block; }
     position: absolute;
     top: var(--nav-h); left: 0; right: 0;
     background: var(--c-bg);
-    border-bottom: 1px solid var(--c-border-light);
+    border-bottom: 1px solid #eee;
     flex-direction: column;
     padding: 16px 32px;
     gap: 14px;
@@ -221,7 +221,7 @@ img { max-width: 100%; display: block; }
   grid-template-columns: 140px 1fr;
   gap: 20px;
   padding: 12px 0;
-  border-bottom: 1px solid var(--c-border-light);
+  border-bottom: 1px solid #eee;
   font-size: 14.5px;
   line-height: 1.65;
 }
@@ -254,7 +254,7 @@ img { max-width: 100%; display: block; }
   grid-template-columns: 170px 1fr;
   gap: 24px;
   padding: 24px 0;
-  border-bottom: 1px solid var(--c-border-light);
+  border-bottom: 1px solid #eee;
   align-items: start;
 }
 .pub-card:last-child { border-bottom: none; }
@@ -365,7 +365,7 @@ img { max-width: 100%; display: block; }
 /* ===== EXPERIENCE ===== */
 .exp-card {
   padding: 20px 0;
-  border-bottom: 1px solid var(--c-border-light);
+  border-bottom: 1px solid #eee;
 }
 .exp-card:last-child { border-bottom: none; }
 .exp-header {
@@ -412,7 +412,7 @@ img { max-width: 100%; display: block; }
 .awards-list { list-style: none; }
 .award-item {
   padding: 10px 0;
-  border-bottom: 1px solid var(--c-border-light);
+  border-bottom: 1px solid #eee;
   font-size: 14.5px;
   line-height: 1.6;
 }
