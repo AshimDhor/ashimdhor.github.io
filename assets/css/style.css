@@ -405,6 +405,20 @@ img { max-width: 100%; display: block; }
   animation: fadeUp 0.3s ease both;
 }
 
+/* WIP badge */
+.wip-badge {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  background: var(--c-rust-bg);
+  color: var(--c-rust);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: inline-block;
+}
+
 /* ===== EXPERIENCE ===== */
 .exp-card {
   padding: 20px 0;
