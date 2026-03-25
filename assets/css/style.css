@@ -7,17 +7,39 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   --c-bg: #ffffff;
-  --c-bg-alt: #f5f7fa;
+  --c-bg-alt: #f6f7f9;
   --c-surface: #ffffff;
   --c-text: #1a1a1a;
   --c-text-secondary: #4a4a4a;
   --c-text-muted: #7a7a7a;
+
+  /* Dark blue — links & clickable text */
   --c-link: #1a4f8b;
   --c-link-hover: #2a6cb8;
-  --c-accent: #1a4f8b;
-  --c-accent-light: #2a6cb8;
-  --c-accent-bg: #e6eef8;
-  --c-highlight: #c9553a;
+
+  /* Teal — name, section titles, nav brand */
+  --c-teal: #0d7377;
+  --c-teal-light: #11959a;
+  --c-teal-bg: #e4f4f4;
+
+  /* Deep purple — year badges, buttons */
+  --c-purple: #5b3a8c;
+  --c-purple-light: #7a52b3;
+  --c-purple-bg: #ede6f6;
+
+  /* Warm rust — venue names, highlights */
+  --c-rust: #b94a2e;
+  --c-rust-bg: #fbeee8;
+
+  /* Amber — news dates, accents */
+  --c-amber: #a16207;
+  --c-amber-bg: #fef3c7;
+
+  /* General accent (teal by default) */
+  --c-accent: var(--c-teal);
+  --c-accent-light: var(--c-teal-light);
+  --c-accent-bg: var(--c-teal-bg);
+
   --c-border: #dde2e8;
   --c-border-light: #e8ecf0;
 
@@ -72,11 +94,11 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-serif);
   font-weight: 600;
   font-size: 17px;
-  color: var(--c-accent);
+  color: var(--c-teal);
   text-decoration: none;
   margin-right: 8px;
 }
-.navbar-brand:hover { color: var(--c-accent-light); text-decoration: none; }
+.navbar-brand:hover { color: var(--c-teal-light); text-decoration: none; }
 .social-icons a {
   color: var(--c-text-secondary);
   display: flex;
@@ -173,7 +195,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.02em;
   line-height: 1.2;
   margin-bottom: 4px;
-  color: var(--c-accent);
+  color: var(--c-teal);
 }
 .hero-text .subtitle {
   font-size: 14.5px;
@@ -199,8 +221,8 @@ img { max-width: 100%; display: block; }
   height: 230px;
   border-radius: 12px;
   object-fit: cover;
-  border: 3px solid var(--c-accent);
-  box-shadow: 0 6px 28px rgba(26,79,139,0.12);
+  border: 3px solid var(--c-teal);
+  box-shadow: 0 6px 28px rgba(13,115,119,0.12);
 }
 
 /* ===== NEWS ===== */
@@ -210,7 +232,7 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   margin-bottom: 20px;
   letter-spacing: -0.01em;
-  color: var(--c-accent);
+  color: var(--c-teal);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -219,7 +241,7 @@ img { max-width: 100%; display: block; }
   content: '';
   flex: 1;
   height: 2px;
-  background: linear-gradient(to right, var(--c-accent), transparent);
+  background: linear-gradient(to right, var(--c-teal), transparent);
 }
 
 .news-list { list-style: none; }
@@ -235,14 +257,14 @@ img { max-width: 100%; display: block; }
   transition: border-left-color 0.2s;
 }
 .news-item:hover {
-  border-left-color: var(--c-accent);
+  border-left-color: var(--c-teal);
   background: var(--c-bg-alt);
 }
 .news-item:last-child { border-bottom: none; }
 .news-date {
   font-family: var(--font-mono);
   font-size: 12.5px;
-  color: var(--c-accent);
+  color: var(--c-amber);
   font-weight: 500;
   padding-top: 2px;
 }
@@ -260,7 +282,7 @@ img { max-width: 100%; display: block; }
   margin-top: 36px;
   margin-bottom: 16px;
   padding: 4px 16px;
-  background: var(--c-accent);
+  background: var(--c-purple);
   color: #fff;
   border-radius: 4px;
   display: inline-block;
@@ -326,13 +348,13 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   color: var(--c-text);
   text-decoration: underline;
-  text-decoration-color: var(--c-accent);
+  text-decoration-color: var(--c-teal);
   text-underline-offset: 2px;
 }
 .pub-venue {
   font-size: 13px;
   font-style: italic;
-  color: var(--c-highlight);
+  color: var(--c-rust);
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -348,9 +370,9 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   padding: 5px 12px;
   border-radius: 4px;
-  background: var(--c-accent-bg);
-  border: 1px solid var(--c-accent);
-  color: var(--c-accent);
+  background: var(--c-purple-bg);
+  border: 1px solid var(--c-purple);
+  color: var(--c-purple);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   transition: all 0.2s;
@@ -359,9 +381,9 @@ img { max-width: 100%; display: block; }
 }
 .pub-links a:hover,
 .pub-links button:hover {
-  background: var(--c-accent);
+  background: var(--c-purple);
   color: #fff;
-  border-color: var(--c-accent);
+  border-color: var(--c-purple);
   text-decoration: none;
 }
 
@@ -409,7 +431,7 @@ img { max-width: 100%; display: block; }
 }
 .exp-org {
   font-size: 14px;
-  color: var(--c-accent);
+  color: var(--c-teal);
   margin-bottom: 8px;
 }
 .exp-desc {
