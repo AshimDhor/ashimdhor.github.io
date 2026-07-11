@@ -488,6 +488,17 @@ img { max-width: 100%; display: block; }
 .footer a { color: var(--c-text-secondary); text-decoration: none; }
 .footer a:hover { text-decoration: none; }
 
+.visitor-counter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.visitor-counter img {
+  display: block;
+  border-radius: 6px;
+  border: 1px solid var(--c-border);
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
