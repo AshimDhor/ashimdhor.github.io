@@ -488,15 +488,29 @@ img { max-width: 100%; display: block; }
 .footer a { color: var(--c-text-secondary); text-decoration: none; }
 .footer a:hover { text-decoration: none; }
 
-.visitor-counter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 14px;
-}
-.visitor-counter img {
-  display: block;
-  border-radius: 6px;
+.visitor-counter-fixed {
+  position: fixed;
+  top: calc(var(--nav-h) + 10px);
+  right: 16px;
+  z-index: 90;
+  padding: 4px;
+  background: var(--c-surface);
   border: 1px solid var(--c-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  line-height: 0;
+}
+.visitor-counter-fixed img {
+  display: block;
+  border-radius: 4px;
+}
+@media (max-width: 640px) {
+  .visitor-counter-fixed {
+    transform: scale(0.85);
+    transform-origin: top right;
+    top: calc(var(--nav-h) + 6px);
+    right: 8px;
+  }
 }
 
 /* ===== ANIMATIONS ===== */
