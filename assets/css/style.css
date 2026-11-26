@@ -370,9 +370,9 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   padding: 5px 12px;
   border-radius: 4px;
-  background: var(--c-purple-bg);
-  border: 1px solid var(--c-purple);
-  color: var(--c-purple);
+  background: #f1f2f4;
+  border: 1px solid #d5d9de;
+  color: #4a4a4a;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   transition: all 0.2s;
@@ -381,9 +381,9 @@ img { max-width: 100%; display: block; }
 }
 .pub-links a:hover,
 .pub-links button:hover {
-  background: var(--c-purple);
-  color: #fff;
-  border-color: var(--c-purple);
+  background: #e2e5e9;
+  color: #1a1a1a;
+  border-color: #c4c9cf;
   text-decoration: none;
 }
 
