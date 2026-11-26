@@ -153,6 +153,26 @@
 
       <h3 class="pub-year">2026</h3>
 
+      <!-- Spectral Identifiability -->
+      <div class="pub-card">
+        <div class="pub-thumb-wrap">
+          <img src="assets/img/pub_spectral.png" alt="Spectral Identifiability">
+        </div>
+        <div class="pub-info">
+          <div class="pub-title">Is the Circuit in the Model or in the Method? Spectral Identifiability for Mechanistic Evaluation</div>
+          <div class="pub-authors"><span class="me">Ashim Dhor</span>, Pin-Yu Chen</div>
+          <div class="pub-venue">Accepted at NeurIPS 2026 Workshops</div>
+          <div class="pub-links">
+            <button onclick="toggleAbstract(this)">Abstract</button>
+            <a href="https://openreview.net/forum?id=mUCtwhdD71" target="_blank">Paper</a>
+            <a href="assets/pdf/NeurIPS_2026_Spectral_Poster.pdf" target="_blank">Poster</a>
+          </div>
+          <div class="pub-abstract">
+            We evaluate models by looking inside them, then act on what we see. Sparse autoencoders, circuit discovery and attribution all report structure that gets used as evidence about the model, but none of them can tell us whether that structure is a property of the model or of the method: change the seed, the width or the calibration corpus, and the answer changes. This is a measurement-validity problem before it is an interpretability problem, and we treat it as one. We give what we believe is the first identifiability theorem for a mechanistic-interpretability primitive. Treating the forward pass as a controlled dynamical system with depth as time and lifting it with the Koopman operator gives a finite linear realisation whose <em>spectrum</em> is coordinate-free: it does not depend on the basis of the dictionary that produced it. We prove this spectrum is recoverable from <i>M</i> calibration samples at rate <i>M</i><sup>&minus;1/2</sup> up to permutation, prove a matching minimax lower bound, and prove a <em>dissociation</em>: whenever the realisation is non-normal - and every model we measured is - the directions carrying activation variance and those carrying information across depth cannot coincide. <em>The object you can certify and the object you can read are not the same object.</em> On GPT-2 small, Gemma-2-2B and Qwen3-8B-Base the spectrum converges everywhere and hits the predicted exponent on Qwen3-8B-Base (&minus;0.506 &plusmn; 0.031). We also report three of our own claims failing their controls, because each failure is a lesson about how to report interpretability evaluations: a pre-registered criterion is met in 49% of cells rather than the registered 80%, and a universality test we proposed declares two seed replicas of one architecture to be different models.
+          </div>
+        </div>
+      </div>
+
       <!-- TUNE++ -->
       <div class="pub-card">
         <div class="pub-thumb-wrap">
