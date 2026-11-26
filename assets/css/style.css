@@ -490,7 +490,7 @@ img { max-width: 100%; display: block; }
 
 .visitor-counter-fixed {
   position: fixed;
-  top: calc(var(--nav-h) + 10px);
+  bottom: 16px;
   right: 16px;
   z-index: 90;
   padding: 4px;
@@ -507,8 +507,8 @@ img { max-width: 100%; display: block; }
 @media (max-width: 640px) {
   .visitor-counter-fixed {
     transform: scale(0.85);
-    transform-origin: top right;
-    top: calc(var(--nav-h) + 6px);
+    transform-origin: bottom right;
+    bottom: 8px;
     right: 8px;
   }
 }
