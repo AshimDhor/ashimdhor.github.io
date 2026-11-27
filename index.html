@@ -39,7 +39,15 @@
         <ul class="navbar-links">
           <li><a href="index.html" class="active">about</a></li>
           <li><a href="moments.html">moments</a></li>
-          <li><a href="assets/pdf/Ashim_CV.pdf" target="_blank">cv</a></li>
+          <li class="cv-item">
+            <details class="cv-menu">
+              <summary>cv</summary>
+              <div class="cv-options">
+                <a href="assets/pdf/Ashim_CV_short.pdf" target="_blank">short cv <span>1 page</span></a>
+                <a href="assets/pdf/Ashim_CV.pdf" target="_blank">long cv <span>full</span></a>
+              </div>
+            </details>
+          </li>
         </ul>
       </div>
     </div>
@@ -389,5 +397,13 @@
     }
   </script>
 
+  <script>
+    // Close the cv menu when clicking anywhere else
+    document.addEventListener('click', function (e) {
+      document.querySelectorAll('.cv-menu[open]').forEach(function (m) {
+        if (!m.contains(e.target)) m.removeAttribute('open');
+      });
+    });
+  </script>
 </body>
 </html>
